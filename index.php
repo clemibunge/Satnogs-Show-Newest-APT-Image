@@ -38,7 +38,7 @@ body {
 <font color="#ff0000">NOAA15</font>
 <?php
 ini_set("allow_url_fopen", 1);
-$jsonx = file_get_contents('https://network.satnogs.org/api/observations/?end=&ground_station=519&id=&satellite__norad_cat_id=25338&start=&transmitter=&vetted_status=good&vetted_user=');
+$jsonx = file_get_contents('https://network.satnogs.org/api/observations/?end=&ground_station=6&id=&satellite__norad_cat_id=25338&start=&transmitter=&vetted_status=good&vetted_user=');
 $json = json_decode($jsonx, true);
 foreach($json as $item) {
     $wtfl = $item['waterfall'];
